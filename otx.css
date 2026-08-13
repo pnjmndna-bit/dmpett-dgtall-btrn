@@ -23,7 +23,7 @@ body.fade-in .container{
 html,
 body{
     width:100%;
-    min-height:100%;
+    min-height:130%;
     margin:0;
     padding:0;
 
@@ -59,32 +59,105 @@ body{
     text-align:center;
 }
 
-/* LOGO */
-
-.logo-wrap{
-    width:100%;
-
-    display:flex;
-    justify-content:center;
-
-    margin-top:14px;
-    margin-bottom:42px;
+.info-box{
+    width:90%;
+    max-width:380px;
+    margin:15px auto;
 }
 
-.logo{
-    width:120px;
+.info-title{
+    color:#ffffff;
 
-    height:auto;
+    font-size:13px;
+    font-weight:800;
 
+    text-align:center;
+
+    letter-spacing:.8px;
+
+    margin-bottom:12px;
+}
+
+.step-text{
+    color:rgba(255,255,255,.95);
+
+    font-size:14px;
+    font-weight:600;
+
+    line-height:1.2;
+
+    margin-bottom:4px;
+}
+
+.step-text span{
+    color:#7fd0ff;
+
+    font-weight:900;
+
+    margin-right:4px;
+}
+
+
+.info-note{
+    margin-top:10px;
+    font-weight:800;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:9px;
+
+    text-align:center;
+
+    line-height:1.6;
+}
+
+/* ========================= */
+/* VIDEO CARD */
+/* ========================= */
+
+.card{
+    width:80%;
+    height:230px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+}
+
+.photo-video{
+    width:100%;
+    height:100%;
     display:block;
+    object-fit:fill;
+}
+
+.otp-card{
+    width:82%;
+    max-width:350px;
+
+    background:#1256a9;
+
+    border-radius:25px;
+
+    padding:18px 18px;
+
+    margin:20px auto 0;
+
+    position:relative;
+
+    opacity:1;
+    filter:none;
+
+    z-index:10;
 }
 
 /* TITLE */
 .title{
     color:#fff;
-    font-size:19px;
+    font-size:18px;
     margin-bottom:22px;
-    font-weight:600;
+    font-weight:500;
     margin-bottom:9px;
 }
 
@@ -94,7 +167,7 @@ body{
 
 /* NUMBER BOX */
 .number-box{
-    width:65%;
+    width:86%;
     height:36px;
 
     margin:0 auto 12px;
@@ -243,50 +316,57 @@ body{
 
 }
 
-/* ALERT */
 .alert-box{
-    width:85%;
-    min-height:45px;
+    position:fixed;
+
+    top:20px;
+    left:50%;
+
+    transform:
+    translateX(-50%)
+    translateY(-80px);
+
+    width:92%;
+    max-width:380px;
+
+    padding:14px 16px;
 
     background:#d9001b;
 
-    border-radius:6px;
+    border-radius:14px;
 
-    padding:14px 12px;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
 
-    margin:20px auto;
+    z-index:99999;
 
-    text-align:center;
+    opacity:0;
+    visibility:hidden;
 
-    overflow:hidden;
-
-    display:none;
+    transition:.35s ease;
 }
 
-/* ALERT TITLE */
+.alert-box.show{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:
+    translateX(-50%)
+    translateY(0);
+}
+
 .alert-title{
     color:#fff;
-
-    font-size:10px;
+    font-size:14px;
     font-weight:700;
-
-    line-height:1.4;
-
-    margin-bottom:6px;
-
-    word-wrap:break-word;
+    margin-bottom:4px;
 }
 
-/* ALERT DESC */
 .alert-desc{
     color:#fff;
-
-    font-size:10px;
-    font-weight:700;
-
-    line-height:1.5;
-
-    word-wrap:break-word;
+    font-size:12px;
+    line-height:1.4;
 }
 
 /* BOX KIRIM ULANG */
